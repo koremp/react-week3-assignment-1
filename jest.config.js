@@ -1,7 +1,8 @@
 module.exports = {
-  setupFilesAfterEnv: [
-    'jest-plugin-context/setup',
-    './jest.setup',
+  setupFilesAfterEnv: ['jest-plugin-context/setup', './jest.setup'],
+  testPathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/procedure-of-assignments/',
   ],
   coverageThreshold: {
     global: {
